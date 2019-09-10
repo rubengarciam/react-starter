@@ -1,6 +1,9 @@
-# React Starters
+# React Starter
 
 A React boilerplate.
+
+![](https://github.com/rubengarciam/react-starter/raw/master/public/screenshot.png)
+
 
 ## Installed Packages
 
@@ -15,8 +18,9 @@ A React boilerplate.
 
 This project was initially bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Others
 
-
+- [Fork](https://fork.dev/) issue tracker [integration](https://git-fork.com/blog/posts/fork-1.0.79/) 
 
 ## License
 
