@@ -1,8 +1,17 @@
 :root {
   --main-bg-color: #ffffff;
+  --font-size: 0.9rem;
+  --font-size-small: 0.8rem;
+  --font-color-muted: rgba(0, 0, 0, 0.4);
 }
 
 /* Shared Styles */
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -17,4 +26,129 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.full-height {
+  height: 100% !important;
+}
+
+.full-height.has-bottom-container {
+  padding-bottom: 50px;
+}
+
+.bottom-container p{
+  line-height: 3rem;
+}
+
+.with-margin {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p.small {
+  font-size: var(--font-size-small);
+}
+
+p.muted {
+  color: var(--font-color-muted);
+}
+
+.ui.small.label {
+  font-weight: 100;
+}
+
+.ui.vertical.menu .item > .label {
+  padding-bottom: 0.5em;
+}
+
+th.collapsing {
+  width: 30px !important;
+}
+/* Main Container */
+
+.main-container {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.ui.grid.main-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center Content */
+
+.content {
+  overflow: auto; 
+  background-color: var(--main-bg-color);
+
+}
+
+.content .ui.grid {
+  height: inherit
+}
+
+.content .data {
+  height: 80%;
+  overflow: auto;
+}
+
+.content .data .ui.segment {
+  height: inherit;
+  overflow: auto;
+}
+
+
+.content .ui.basic.table {
+  min-width: 550px;
+}
+
+
+/* Forms */
+
+.container.start {
+  width: 400px;
+}
+
+.ui.checkbox {
+  display: block;
+}
+
+.ui.checked.fitted.checkbox label,
+.ui.checked.fitted.checkbox + label,
+.ui.checked.fitted.checkbox input:focus ~ label,
+.ui.checked.fitted.checkbox label,
+.ui.checked.fitted.checkbox .box:before,
+.ui.checked.fitted.checkbox label:before,
+.ui.checked.fitted.checkbox .box:after,
+.ui.checked.fitted.checkbox label:after,
+.ui.checked.fitted.checkbox input:checked ~ .box:after,
+.ui.checked.fitted.checkbox input:checked ~ label:after,
+.ui.checkbox input:checked:focus ~ .box:before,
+.ui.checkbox input:checked:focus ~ label:before,
+.ui.checkbox input:not([type="radio"]):indeterminate:focus ~ .box:before,
+.ui.checkbox input:not([type="radio"]):indeterminate:focus ~ label:before {
+  /* width: 15px;
+  height: 15px; */
+  /* color: var(--asana-bg-color);
+  border-color: var(--asana-bg-color); */
+}
+
+
+table {
+  table-layout: fixed 
+}
+table td {
+  word-wrap: break-word;
+}
+
+/* Cards */
+
+.ui.card {
+  height: 500px;
+}
+
+.container .card {
+  margin: auto
 }
