@@ -1,0 +1,7 @@
+# Integration with Issue Tracker
+#
+# (note that '\' need to be escaped).
+
+[issuetracker "Asana"]
+  regex = "#(\\d+)"
+  url = "https://app.asana.com/0/[PROJECT_ID]/$1"
